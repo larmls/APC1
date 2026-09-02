@@ -1,15 +1,25 @@
 #include <stdio.h>
 
+
 int main() {
-    int x=5/2; 
-    int y=x++; 
-    int z=x%2;
 
 
-    printf("valor de x: %d\n ");
-    printf("valor de y: %d\n ");
-    printf("valor de y: %d\n ");
+   
 
-return 0;
+    char nome[31];
+    int idade;
+    
+    printf("Digite seu nome: ");
+    printf("Digite uma idade: ");
+
+    fgets(nome, sizeof(nome), stdin);
+    fgets(idade, sizeof(idade), stdin);
+    printf("%s",nome, idade);
+
+return 0; 
 
 }
+
+
+    //Leia o nome completo (espaços) e idade; imprima formatado, use fgets + scanf 
+//com limpeza de buffer. 
