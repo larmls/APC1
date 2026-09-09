@@ -10,11 +10,13 @@ int main() {
     int idade;
     
     printf("Digite seu nome: ");
-    printf("Digite uma idade: ");
-
     fgets(nome, sizeof(nome), stdin);
-    fgets(idade, sizeof(idade), stdin);
-    printf("%s",nome, idade);
+
+    printf("Digite uma idade: ");
+    scanf("%d", idade);
+    
+    
+    printf("%s",nome, "%s",idade);
 
 return 0; 
 
